@@ -1,9 +1,9 @@
 FROM ubuntu:16.04
 
 
-EXPOSE 5001
-EXPOSE 5000
-CMD python microservicepython.py
+EXPOSE 5004:5004
+
+CMD python microservicepython_guevara.py
 
 ADD . /code
 WORKDIR /code
