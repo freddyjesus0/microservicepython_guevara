@@ -19,7 +19,7 @@ def microserviceLogic ():
                 criteria = request.args.get('criteria')
                 
 
-            db = MySQLdb.connect(host="54.85.114.57", user="freddyjesus0", passwd="FreJe9008",  port=3308, db="microservice", charset='utf8',use_unicode=True)        
+            db = MySQLdb.connect(host="54.211.149.240", user="freddyjesus0", passwd="FreJe9008",  port=3308, db="microservice", charset='utf8',use_unicode=True)        
             cur = db.cursor()
             query = ("SELECT * FROM microservicereceiver_catalog WHERE provider like %s")
             criteria= "%"+criteria+"%"
